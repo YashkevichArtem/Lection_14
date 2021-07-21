@@ -6,7 +6,7 @@ import java.time.Duration;
 
 public class Sign_out {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "D:\\Учёба SENLA\\Автоматизация тестирования\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
@@ -21,7 +21,6 @@ public class Sign_out {
 
         Thread.sleep(5000);
 
-        driver.close();
         driver.quit();
     }
 }
